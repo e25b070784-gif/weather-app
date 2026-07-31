@@ -40,7 +40,6 @@ async function search() {
   errorEl.textContent = '';
   weatherEl.classList.add('hidden');
 
-  // Geocode
   try {
     const geoRes = await fetch(`${GEO_URL}?name=${encodeURIComponent(city)}&count=1`);
     const geoData = await geoRes.json();
@@ -52,7 +51,6 @@ async function search() {
 
     const loc = geoData.results[0];
 
-    // Fetch weather
     const params = new URLSearchParams({
       latitude: loc.latitude,
       longitude: loc.longitude,
