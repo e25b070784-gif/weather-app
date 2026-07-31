@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+  margin: 0;
+}
+
+.app {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #333;
+}
+
+.search {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.search input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.search input:focus {
+  border-color: #4a90e2;
+}
+
+.search button {
+  padding: 8px 16px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background: #357abd;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin: 0 0 8px;
+  min-height: 20px;
+}
+
+.weather {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+}
+
+.weather.hidden {
+  display: none;
+}
+
+.weather h2 {
+  margin: 0 0 4px;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.weather #country {
+  margin: 0 0 12px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.temp-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.temp-row span:first-child {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.icon {
+  font-size: 2.5rem;
+}
+
+#desc {
+  color: #555;
+  margin: 0 0 16px;
+  text-transform: capitalize;
+  font-size: 0.95rem;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-size: 0.75rem;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.detail span:last-child {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+}
